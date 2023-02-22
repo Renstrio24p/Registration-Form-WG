@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Stylesheet" href="./css/styleit.css">
+    <title>HTML form Excersize</title>
+</head>
+<body>
+    <!--- ********************************* Title of the form *************************-->
+    <h1> Registration Form </h1>
+
+    <p> Please fill up the required information</p>
+
+    <!--************************************ Form -************************************-->
+
+    <form action="#">
+
+    <!-- Field Set 1 Firstname , Last name , Email , Password Field-->
+
+    <fieldset>
+
+        <label for="#">Firstname <input type="text" placeholder="Firstname" name="fname" required></label> 
+        <label for="#">Lastname  <input type="text" placeholder="Lastname" name="lname" required> </label> 
+        <label for="#">Email  <input type="email" placeholder="123@domain.com" name="eml" required> </label> 
+        <label for="#">Password  <input type="password" maxlength="16" pattern="[a-z0-5{8}]" name="pswrd" placeholder="•••••••••••••••••••" required> </label> 
+
+    </fieldset>
+
+    <!-- Field Set 2-->
+
+    <fieldset>
+
+        <label for="#"><input type="radio" name="account-type" id=""> Personal Accouont</label> 
+        <label for="#"><input type="radio" name="account-type" id="" > Business Account</label>
+        <label for="#"><input type="checkbox" required>I accept the <a href="#"> Terms and Conditions </a></label>
+
+    </fieldset>
+    <!-- Field Set 3-->
+
+    <fieldset>
+
+        <label>Upload a Profile Picture: <input type="file"> </label>
+        <label for="#"> Age (Years) : <input type="number" min="13" max="120" name="age"> </label>
+
+        <label>
+            How did you hear from us? 
+        <select>
+            <option value="">(select one)</option>
+            <option value="1" name="news">News</option>
+            <option value="2" name="blog">Blog</option>
+            <option value="3" name="forum">Forums</option>
+            <option value="4" name="others">Others</option>
+        </select>
+    </label>
+
+    <label for="#">
+        Provide a bio:
+        <textarea rows="3" col="15" name="bio" placeholder="I like to play">
+
+
+        </textarea>
+    </label>
+    </fieldset>
+
+    <input type="submit" value="Submit">
+    </form>
+        
+</body>
+</html>
